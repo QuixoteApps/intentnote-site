@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy • Intent Note</title>
+  <meta name="description" content="Privacy Policy for Intent Note" />
+  <style>
+    :root { --bg:#ffffff; --fg:#111; --muted:#555; --card:#fff; --border:#e7e7ea; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 40px 20px; }
+    h1 { margin: 0 0 12px; font-size: 28px; }
+    h2 { margin: 28px 0 8px; font-size: 20px; }
+    p, li { line-height: 1.7; color: var(--muted); }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .crumb { margin-bottom: 10px; font-size: 14px; }
+  </style>
+  <meta name="robots" content="noindex,follow" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="crumb"><a href="/">← Back</a></div>
+    <h1>Privacy Policy</h1>
+    <p>Effective date: <span id="effective"></span></p>
+
+    <p>Intent Note respects your privacy. We collect only what’s needed to provide the app, and we never sell your data.</p>
+
+    <h2>Data we handle</h2>
+    <ul>
+      <li><strong>Notes and Intentions</strong>: Stored on your device and synced with iCloud if enabled. We do not run our own servers for your content.</li>
+      <li><strong>Calendar Access</strong>: With your permission, the app reads events to show your agenda and schedule local reminders. Event data stays on device.</li>
+      <li><strong>Notifications</strong>: The app schedules local notifications you configure (e.g., daily summary). No third‑party push providers are used.</li>
+      <li><strong>Purchases</strong>: Apple handles purchases and subscriptions via StoreKit. We receive non‑identifying purchase status to unlock features.</li>
+      <li><strong>Analytics</strong>: If enabled in the future, analytics will be privacy‑respecting and minimal. We will update this page before enabling.</li>
+    </ul>
+
+    <h2>Sharing</h2>
+    <p>We do not sell your data. We do not share personal data with third parties, except Apple services you opt into (iCloud, App Store purchases).</p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>You can revoke Calendar and Notification permissions in iOS Settings.</li>
+      <li>You can delete local data by removing the app from your device. iCloud data can be managed in iCloud Settings.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>Intent Note is not directed to children under 13.</p>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:support@intentnote.app">support@intentnote.app</a></p>
+
+    <h2>Changes</h2>
+    <p>We may update this policy. We will post updates here and revise the effective date.</p>
+
+    <p>© <span id="year"></span> Intent Note</p>
+  </div>
+  <script>
+    const now = new Date();
+    document.getElementById('year').textContent = now.getFullYear();
+    document.getElementById('effective').textContent = now.toLocaleDateString();
+  </script>
+</body>
+</html>
+
+

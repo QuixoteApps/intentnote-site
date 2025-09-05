@@ -25,31 +25,52 @@
     <h1>Privacy Policy</h1>
     <p>Effective date: <span id="effective"></span></p>
 
-    <p>Intent Note respects your privacy. We collect only what’s needed to provide the app, and we never sell your data.</p>
+    <p>Intent Note is designed to store your content on your devices and (optionally) your iCloud account. We collect the minimum analytics needed to improve the app—and only if you opt in. We do not sell your data.</p>
 
-    <h2>Data we handle</h2>
+    <h2>Data We Handle</h2>
     <ul>
-      <li><strong>Notes and Intentions</strong>: Stored on your device and synced with iCloud if enabled. We do not run our own servers for your content.</li>
-      <li><strong>Calendar Access</strong>: With your permission, the app reads events to show your agenda and schedule local reminders. Event data stays on device.</li>
-      <li><strong>Notifications</strong>: The app schedules local notifications you configure (e.g., daily summary). No third‑party push providers are used.</li>
-      <li><strong>Purchases</strong>: Apple handles purchases and subscriptions via StoreKit. We receive non‑identifying purchase status to unlock features.</li>
-      <li><strong>Analytics</strong>: If enabled in the future, analytics will be privacy‑respecting and minimal. We will update this page before enabling.</li>
+      <li><strong>Notes & Intentions</strong>: Stored locally in Core Data. If iCloud sync is enabled, your data is synced via Apple’s CloudKit using your iCloud account. We do not operate our own content servers.</li>
+      <li><strong>Widgets</strong>: Widgets read a small cache (e.g., selected note text, timestamps) via an App Group container shared with the app. This cache stays on your device/iCloud.</li>
+      <li><strong>Calendar</strong>: With permission, the app reads your calendar to show an agenda and can create events you request. Event data is accessed via EventKit and remains on your device/iCloud.</li>
+      <li><strong>In‑app Calendar (optional)</strong>: If you prefer not to use Apple Calendar, you can keep a separate calendar inside Intent Note. Those events are stored locally (and in iCloud if sync is enabled) and are not added to Apple Calendar.</li>
+      <li><strong>Notifications</strong>: The app schedules local notifications you configure (daily summaries, event reminders). No third‑party push providers are used.</li>
+      <li><strong>Purchases</strong>: Apple’s App Store processes payments. We receive non‑identifying purchase status to unlock features.</li>
+      <li><strong>Analytics (opt‑in)</strong>: If you allow analytics, we use PostHog to collect anonymous usage events with limited metadata (for example, text length or a boolean such as “has tags”). <em>We never send your notes/intention text or calendar contents.</em> Session replay is enabled with masking of images and text inputs. You can turn analytics on/off anytime in Settings.</li>
+      <li><strong>Siri/Shortcuts</strong>: Currently disabled in the app. No Siri phrases or Shortcuts collect data.</li>
+    </ul>
+
+    <h2>Analytics Events We Collect (when enabled)</h2>
+    <ul>
+      <li><code>note_created</code> { <code>has_tags</code> }</li>
+      <li><code>intention_day_set</code> { <code>text_length</code> }</li>
+      <li><code>intention_day_completed</code> { <code>text_length</code> }</li>
+      <li><code>calendar_event_created</code> { <code>method</code>, <code>all_day</code>, <code>duration_minutes</code> }</li>
+      <li><code>analytics_opt_in</code></li>
+    </ul>
+
+    <h2>What We Don’t Collect</h2>
+    <ul>
+      <li>No accounts or personal identifiers (we don’t ask for name, email, or phone in the app).</li>
+      <li>No advertising identifiers or third‑party ad trackers.</li>
+      <li>No content of your notes, intentions, or calendar events is sent to our servers.</li>
     </ul>
 
     <h2>Sharing</h2>
-    <p>We do not sell your data. We do not share personal data with third parties, except Apple services you opt into (iCloud, App Store purchases).</p>
+    <p>We do not sell your data. We only share data with Apple services you choose to use (iCloud, App Store purchases). If you enable analytics, events are sent to PostHog for processing on our behalf.</p>
 
-    <h2>Your choices</h2>
+    <h2>Your Choices & Controls</h2>
     <ul>
-      <li>You can revoke Calendar and Notification permissions in iOS Settings.</li>
-      <li>You can delete local data by removing the app from your device. iCloud data can be managed in iCloud Settings.</li>
+      <li>Analytics: Toggle on/off in Settings (“Allow Analytics”). Off by default.</li>
+      <li>iCloud Sync: Toggle in Settings. If off, data remains only on your device.</li>
+      <li>Permissions: Revoke Calendar and Notification access in iOS Settings at any time.</li>
+      <li>Data Deletion: Delete local data by removing the app. Manage iCloud data from iOS Settings ▸ Apple ID ▸ iCloud ▸ iCloud Drive/Manage Storage.</li>
     </ul>
 
     <h2>Children</h2>
     <p>Intent Note is not directed to children under 13.</p>
 
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:support@intentnote.app">support@intentnote.app</a></p>
+    <p>Email: <a href="mailto:dominick@intentnoteapp.com">dominick@intentnoteapp.com</a></p>
 
     <h2>Changes</h2>
     <p>We may update this policy. We will post updates here and revise the effective date.</p>
@@ -63,5 +84,3 @@
   </script>
 </body>
 </html>
-
-

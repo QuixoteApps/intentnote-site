@@ -3,44 +3,39 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Support • Intent Note</title>
-  <meta name="description" content="Support for Intent Note" />
+  <title>Intent Note</title>
+  <meta name="description" content="Intent Note — the fastest way to set a purpose, capture a thought, and see what’s next." />
   <style>
-    :root { --bg:#ffffff; --fg:#111; --muted:#555; --card:#fff; --border:#e7e7ea; --link:#0b5fff; }
+    :root { --bg:#f7f7f8; --fg:#111; --muted:#555; --card:#fff; --border:#e7e7ea; }
     * { box-sizing: border-box; }
     body { margin:0; font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); }
-    .wrap { max-width: 820px; margin: 0 auto; padding: 48px 20px; }
-    h1 { margin: 0 0 16px; font-size: 32px; }
-    p { line-height: 1.7; color: var(--muted); font-size: 18px; }
-    .crumb { margin-bottom: 12px; font-size: 14px; }
-    a { color: var(--link); text-decoration: none; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    p { line-height: 1.6; color: var(--muted); }
+    .links { margin-top: 20px; display: flex; gap: 16px; flex-wrap: wrap; }
+    a { color: #0b5fff; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .cta { display:inline-block; margin-top: 16px; padding: 14px 18px; border-radius: 12px; border: 1px solid var(--border); background:#f7f9ff; font-weight:600; }
-    .email { font-size: 22px; font-weight: 700; letter-spacing: 0.2px; }
+    footer { margin-top: 32px; color: var(--muted); font-size: 14px; }
   </style>
   <meta name="robots" content="noindex,follow" />
-  <link rel="icon" href="data:,"/>
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="color-scheme" content="light" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="Intent Note Support" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="HandheldFriendly" content="true" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 </head>
 <body>
   <div class="wrap">
-    <div class="crumb"><a href="/">← Back</a></div>
-    <h1>Support</h1>
-    <p>For support with Intent Note, please email us at</p>
-    <p class="email"><a aria-label="Email support" href="mailto:dominick@intentnoteapp.com">dominick@intentnoteapp.com</a></p>
-    <p>
-      <a class="cta" href="mailto:dominick@intentnoteapp.com?subject=Intent%20Note%20Support">Email Support</a>
-    </p>
-    <p>We typically respond within 1–2 business days.</p>
+    <div class="card">
+      <h1>Intent Note</h1>
+      <p>Intent Note is the fastest way to set a purpose, capture a thought, and see what’s next. It pairs one‑tap intentions with frictionless notes and a gentle calendar so you pick up your phone, remember why, and get out again—on purpose.</p>
+      <div class="links">
+        <a href="support/">Support</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Use</a>
+      </div>
+    </div>
+    <footer>
+      <div>© <span id="year"></span> Intent Note</div>
+    </footer>
   </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  
 </body>
 </html>
